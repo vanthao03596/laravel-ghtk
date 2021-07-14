@@ -20,11 +20,11 @@ final class TokenAuthenticator extends AbstractAuthenticator
      */
     public function authenticate(array $config)
     {
-        if (!$this->client) {
+        if (! $this->client) {
             throw new InvalidArgumentException('The client instance was not given to the authenticator.');
         }
 
-        if (!array_key_exists('token', $config)) {
+        if (! array_key_exists('token', $config)) {
             throw new InvalidArgumentException('The token authenticator requires a token.');
         }
 

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Vanthao03596\LaravelGhtk;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
+use Illuminate\Support\ServiceProvider;
 use Vanthao03596\GhtkSdk\Client;
 use Vanthao03596\LaravelGhtk\Auth\AuthenticatorFactory;
 

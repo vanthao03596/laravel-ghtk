@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Vanthao03596\LaravelGhtk;
 
-use Vanthao03596\GhtkSdk\Client;
-use Vanthao03596\LaravelGhtk\Auth\AuthenticatorFactory;
 use Illuminate\Support\Arr;
 use InvalidArgumentException;
+use Vanthao03596\GhtkSdk\Client;
+use Vanthao03596\LaravelGhtk\Auth\AuthenticatorFactory;
 
 class GhtkFactory
 {
@@ -45,7 +45,7 @@ class GhtkFactory
 
         $client = new Client(null, $liveMode);
 
-        if (!array_key_exists('method', $config)) {
+        if (! array_key_exists('method', $config)) {
             throw new InvalidArgumentException('The Ghtk factory requires an auth method.');
         }
 
