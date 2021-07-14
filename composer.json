@@ -23,7 +23,7 @@
         "vanthao03596/ghtk-sdk": "^0.0.2"
     },
     "require-dev": {
-        "nunomaduro/collision": "^5.3",
+        "nunomaduro/collision": "^3.0|^5.3",
         "orchestra/testbench": "^4.8|^5.2|^6.0",
         "phpunit/phpunit": "^9.3",
         "guzzlehttp/guzzle": "^7.2",
