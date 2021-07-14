@@ -2,11 +2,11 @@
 
 namespace Vanthao03596\LaravelGhtk\Tests\Auth;
 
+use InvalidArgumentException;
+use TypeError;
 use Vanthao03596\LaravelGhtk\Auth\Authenticator\TokenAuthenticator;
 use Vanthao03596\LaravelGhtk\Auth\AuthenticatorFactory;
 use Vanthao03596\LaravelGhtk\Tests\TestCase;
-use InvalidArgumentException;
-use TypeError;
 
 class AuthenticatorFactoryTest extends TestCase
 {

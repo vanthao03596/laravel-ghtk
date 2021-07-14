@@ -2,11 +2,11 @@
 
 namespace Vanthao03596\LaravelGhtk\Tests\Auth\Authenticator;
 
+use InvalidArgumentException;
+use Mockery;
 use Vanthao03596\GhtkSdk\Client;
 use Vanthao03596\LaravelGhtk\Auth\Authenticator\TokenAuthenticator;
 use Vanthao03596\LaravelGhtk\Tests\TestCase;
-use InvalidArgumentException;
-use Mockery;
 
 class TokenAuthenticatorTest extends TestCase
 {
@@ -18,7 +18,7 @@ class TokenAuthenticatorTest extends TestCase
         $client->shouldReceive('authenticate')->once()->with('your-token');
 
         $return = $authenticator->with($client)->authenticate([
-            'token'  => 'your-token',
+            'token' => 'your-token',
             'method' => 'token',
         ]);
 
@@ -33,7 +33,7 @@ class TokenAuthenticatorTest extends TestCase
         $client->shouldReceive('authenticate')->once()->with('your-token');
 
         $return = $authenticator->with($client)->authenticate([
-            'token'  => 'your-token',
+            'token' => 'your-token',
         ]);
 
         $this->assertInstanceOf(Client::class, $return);
@@ -59,7 +59,7 @@ class TokenAuthenticatorTest extends TestCase
         $this->expectExceptionMessage('The client instance was not given to the authenticator.');
 
         $authenticator->authenticate([
-            'token'  => 'your-token',
+            'token' => 'your-token',
             'method' => 'token',
         ]);
     }

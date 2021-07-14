@@ -2,7 +2,6 @@
 
 namespace Vanthao03596\LaravelGhtk\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Vanthao03596\LaravelGhtk\LaravelGhtkServiceProvider;
 
