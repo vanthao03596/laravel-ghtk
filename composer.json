@@ -19,8 +19,8 @@
     "require": {
         "php": "^7.3|^8.0",
         "graham-campbell/manager": "^4.5",
-        "illuminate/contracts": "^6.0|^7.0|^8.0",
-        "illuminate/support": "^6.0|^7.0|^8.0",
+        "illuminate/contracts": "^6.0|^7.0|^v8.0.0|v10.39.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|v10.39.0",
         "vanthao03596/ghtk-sdk": "^0.0.2"
     },
     "require-dev": {
